@@ -1,0 +1,10 @@
+name: k8s-deploy-via-helm
+
+on:
+  workflow_dispatch:
+  
+env:
+  HELM_EXPERIMENTAL_OCI: 1
+  HELM_VERSION_TO_INSTALL: 3.5.0
+  ACR_NAME: k8scontainerregistry101
+  ACR_REPO_NAME: ''
